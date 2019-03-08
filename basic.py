@@ -11,6 +11,8 @@ the_pdf = pdfplumber.open(IN_PATH)
 # even if that list just as one item
 pages = the_pdf.pages
 pg = pages[0]
+
+# the function call that does most of the work
 pg_table = pg.extract_table()
 
 # open a file to write to:
